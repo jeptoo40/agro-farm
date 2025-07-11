@@ -35,55 +35,50 @@
     }
 
     nav {
+      position: relative;
       text-align: center;
       margin-top: 10px;
     }
 
-    nav {
-  position: relative;
-  text-align: center;
-  margin-top: 10px;
-}
+    /* The nav links */
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+    }
 
-/* The nav links */
-nav a {
-  margin: 0 15px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-}
+    /* Hamburger button - hidden on desktop */
+    .menu-toggle {
+      display: none;
+      font-size: 2em;
+      color: white;
+      cursor: pointer;
+      user-select: none;
+      position: absolute;
+      right: 10px;
+      top: 5px;
+    }
 
-/* Hamburger button - hidden on desktop */
-.menu-toggle {
-  display: none;
-  font-size: 2em;
-  color: white;
-  cursor: pointer;
-  user-select: none;
-  position: absolute;
-  right: 10px;
-  top: 5px;
-}
-
-/* Small screen styles */
-@media (max-width: 768px) {
-  /* Hide normal links */
-  nav a {
-    display: none;
-  }
-  
-  /* Show hamburger */
-  .menu-toggle {
-    display: block;
-  }
-  
-  /* When nav is open, show links stacked vertically */
-  nav.open a {
-    display: block;
-    margin: 10px 0;
-  }
-}
+    /* Small screen styles */
+    @media (max-width: 768px) {
+      /* Hide normal links */
+      nav a {
+        display: none;
+      }
+      
+      /* Show hamburger */
+      .menu-toggle {
+        display: block;
+      }
+      
+      /* When nav is open, show links stacked vertically */
+      nav.open a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
 
     .hero {
       background: url('download.jpeg') no-repeat center center/cover;
@@ -103,178 +98,149 @@ nav a {
       font-weight: bold;
     }
 
-
-
-
     .features {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
-  color: #333;
-}
+      padding: 60px 20px;
+      background-color: #f9f9f9;
+      text-align: center;
+      color: #333;
+    }
 
-.features h2 {
-  margin-bottom: 40px;
-  font-size: 2em;
-}
+    .features h2 {
+      margin-bottom: 40px;
+      font-size: 2em;
+    }
 
-.feature-items {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+    .feature-items {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
-.feature {
-  max-width: 300px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: center;
-}
+    .feature {
+      max-width: 300px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
 
-.feature-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
+    .feature-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
 
-.feature h3 {
-  margin-top: 0;
-  margin-bottom: 15px;
-  color: #24b129; /* matching your green header */
-}
+    .feature h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #24b129; /* matching your green header */
+    }
 
+    .seasonal-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
 
+    .seasonal-content ul {
+      max-width: 300px;
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.1em;
+    }
 
+    .seasonal-img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
 
+    .seasonal-specials {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 100px 40px;
+      text-align: center;
+      color: #007b33; /* matching seasonal style */
+    }
 
-.seasonal-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 40px;
-  flex-wrap: wrap;
-}
+    .image-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
 
-.seasonal-content ul {
-  max-width: 300px;
-  list-style-type: none;
-  padding: 0;
-  font-size: 1.1em;
-}
+    .contact-section {
+      background-color: #e9f8ed;
+      padding: 60px 20px;
+      text-align: center;
+      color: #2d5d34;
+    }
 
-.seasonal-img {
-  max-width: 300px;
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+    .contact-section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
 
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
 
-.seasonal-specials {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 100px 40px;
-  text-align: center;
-  color: #007b33; /* matching seasonal style */
-}
+    .contact-box {
+      max-width: 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
 
+    .contact-box h3 {
+      margin-bottom: 10px;
+      color: #24b129;
+      font-size: 1.2em;
+    }
 
+    .contact-box p {
+      margin: 0;
+      line-height: 1.5;
+    }
 
+    footer {
+      background-color: #363131;
+      text-align: center;
+      padding: 1.5em 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
 
-.image-banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+    .social-icons {
+      margin-top: 10px;
+    }
 
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
 
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
 
-
-
-.contact-section {
-  background-color: #e9f8ed;
-  padding: 60px 20px;
-  text-align: center;
-  color: #2d5d34;
-}
-
-.contact-section h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
-
-.contact-details {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
-
-.contact-box {
-  max-width: 250px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.contact-box h3 {
-  margin-bottom: 10px;
-  color: #24b129;
-  font-size: 1.2em;
-}
-
-.contact-box p {
-  margin: 0;
-  line-height: 1.5;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-  background-color: #363131;
-  text-align: center;
-  padding: 1.5em 20px;
-  font-size: 0.9em;
-  color: #555;
-}
-
-.social-icons {
-  margin-top: 10px;
-}
-
-.social-icons a {
-  margin: 0 10px;
-  display: inline-block;
-}
-
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
 
     @media (max-width: 768px) {
       .header-top {
@@ -305,13 +271,11 @@ footer {
   </nav>
 </header>
 
-
   <section class="hero">
     <h2>Farm Fresh Vegetables Delivered to Your Door</h2>
     <p>Grown with love and care on our family farm.</p>
     <a href="Visitus.html" class="btn">GET THE LOCATION</a>
   </section>
-
 
   <section class="features">
     <h2>Why Choose FreshFarm Veggies?</h2>
@@ -333,8 +297,6 @@ footer {
       </div>
     </div>
   </section>
-  
-  
 
   <section class="seasonal-specials">
     <h2>Seasonal Specials</h2>
@@ -347,14 +309,11 @@ footer {
       <img src="seasonal.jpeg" alt="Seasonal Vegetables" class="seasonal-img" />
     </div>
   </section>
-  
-  
-
 
   <section class="image-banner">
     <img src="home7.webp" alt="Our Farm" />
   </section>
-  
+
   <section class="contact-section">
     <h2>Get in Touch</h2>
     <div class="contact-details">
@@ -376,31 +335,11 @@ footer {
       </div>
     </div>
   </section>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
   <footer>
     <p>&copy; 2025 FreshFarm </p>
     <div class="social-icons">
-      <a href="https://wa.me/254724491544
-      " target="_blank" aria-label="whatsapp">
+      <a href="https://wa.me/254724491544" target="_blank" aria-label="whatsapp">
         <img src="whatsapp.png" alt="Whatsapp" />
       </a>
       <a href="https://www.instagram.com/jeptoo44?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram">
@@ -411,7 +350,16 @@ footer {
       </a>
     </div>
   </footer>
-  
+
+  <!-- JavaScript for menu toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav');
+
+    menuToggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
