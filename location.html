@@ -17,36 +17,88 @@
       padding: 1em 2em;
       color: white;
       text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2em;
+      position: relative;
     }
 
     .logo {
-      height: 120px;
-      margin-right: 20px;
+      height: 100px;
+      display: block;
+      margin: 0 auto 10px;
     }
 
     nav {
       margin-top: 10px;
-      text-align: center;
     }
 
-    nav a {
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav ul li a {
       color: white;
-      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
       font-size: 1em;
+      padding: 8px 12px;
+      display: block;
     }
 
-    nav a:hover {
+    nav ul li a:hover {
       text-decoration: underline;
     }
 
-    section.location-info {
+    /* Hamburger Menu Styles */
+    .menu-toggle {
+      display: none;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 30px;
+      height: 22px;
+      cursor: pointer;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .menu-toggle span {
+      display: block;
+      height: 4px;
+      background: white;
+      border-radius: 2px;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #2d5d34;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 10;
+      }
+
+      nav ul.open {
+        max-height: 300px; /* enough to show all links */
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+    }
+
+    /* Rest of your styles */
+
+    .location-info {
       background: url('https://maps.maphill.com/Kenya/Rift-Valley/Uasin-Gishu/Moiben/maps/satellite-map-800x600.jpg') no-repeat center center/cover;
       padding: 60px 20px;
       color: white;
@@ -55,14 +107,15 @@
       margin: 40px auto;
       border-radius: 15px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
     }
 
-    section.location-info h2 {
+    .location-info h2 {
       font-size: 2.5em;
       margin-bottom: 0.5em;
     }
 
-    section.location-info p {
+    .location-info p {
       font-size: 1.2em;
       max-width: 600px;
       margin: 0 auto 1.5em;
@@ -82,81 +135,107 @@
       border: 0;
     }
 
+    .directions-section {
+      max-width: 1500px;
+      margin: 60px auto;
+      padding: 40px 30px;
+      background-color: #d8f0d3;
+      border-radius: 15px;
+      color: #2d5d34;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
 
-      
-.contact-section {
-  background-color: #e9f8ed;
-  padding: 60px 20px;
-  text-align: center;
-  color: #2d5d34;
-}
+    .directions-text, .directions-image {
+      flex: 1 1 500px;
+      min-width: 300px;
+    }
 
-.contact-section h2 {
-  font-size: 2em;
-  margin-bottom: 30px;
-}
+    .directions-text p {
+      line-height: 1.7;
+      font-size: 1.2em;
+    }
 
-.contact-details {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-}
+    .directions-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
 
-.contact-box {
-  max-width: 250px;
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: left;
-}
+    .contact-section {
+      background-color: #e9f8ed;
+      padding: 60px 20px;
+      text-align: center;
+    }
 
-.contact-box h3 {
-  margin-bottom: 10px;
-  color: #24b129;
-  font-size: 1.2em;
-}
+    .contact-section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
 
-.contact-box p {
-  margin: 0;
-  line-height: 1.5;
-}
+    .contact-details {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
 
+    .contact-box {
+      max-width: 250px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: left;
+    }
 
-footer {
-  background-color: #363131;
-  text-align: center;
-  padding: 1.5em 20px;
-  font-size: 0.9em;
-  color: #555;
-}
+    .contact-box h3 {
+      margin-bottom: 10px;
+      color: #24b129;
+      font-size: 1.2em;
+    }
 
-.social-icons {
-  margin-top: 10px;
-}
+    .contact-box p {
+      margin: 0;
+      line-height: 1.5;
+    }
 
-.social-icons a {
-  margin: 0 10px;
-  display: inline-block;
-}
+    footer {
+      background-color: #363131;
+      text-align: center;
+      padding: 1.5em 20px;
+      font-size: 0.9em;
+      color: #555;
+    }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
-}
+    .social-icons {
+      margin-top: 10px;
+    }
 
-.social-icons img:hover {
-  transform: scale(1.2);
-}
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
 
     @media (max-width: 600px) {
-      section.location-info h2 {
+      .location-info h2 {
         font-size: 1.8em;
       }
 
-      section.location-info p {
+      .location-info p {
         font-size: 1em;
       }
     }
@@ -165,69 +244,51 @@ footer {
 <body>
 
   <header>
-    <div class="header-top">
-        <img src="logo.png" alt="Homelet Veggies" class="logo" />
-      </div>
+    <img src="logo.png" alt="Homelet Veggies" class="logo" />
     <nav>
-      <a href="index.html">Home</a>
-      <a href="product.html">Our Products</a>
-      <a href="about.html">About</a>
-      <a href="location.html">Visit Us</a>
-      <a href="contact.html">Contact Us</a>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Our Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Visit Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
     </nav>
   </header>
 
- 
+  <section class="location-info">
+    <h2>Our Location</h2>
+    <p>Discover where Homelet Veggies is located, surrounded by the beautiful landscapes near Moiben Town, Kenya.</p>
+  </section>
 
   <div class="map-container">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991.879452727089!2d35.12516337416061!3d0.9269560992552269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17800c9f0b53f683%3A0x73ec84f01ef28738!2sMoiben%2C%20Kenya!5e0!3m2!1sen!2sus!4v1689485752568!5m2!1sen!2sus"
       allowfullscreen=""
       loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Homelet Veggies Location">
     </iframe>
   </div>
-  <section style="
-  max-width: 1500px;
-  margin: 60px auto;
-  padding: 40px 30px;
-  background-color: #d8f0d3;
-  border-radius: 15px;
-  color: #2d5d34;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-">
-  <div style="
-    flex: 1 1 500px;
-    min-width: 320px;
-    font-size: 1.2em;
-  ">
- 
-    <p style="line-height: 1.7;">
-      We are located just a few kilometers from Moiben Town. If you’re coming from Eldoret, take the Moi University Road heading east, then turn right at the Moiben junction. Look for the signposts directing you to our farm, and you'll find us surrounded by lush greenery and fresh air. Parking is available on site.
-    </p>
-  </div>
-  <div style="
-    flex: 1 1 550px;
-    min-width: 320px;
-  ">
-    <img src="moi.avif" alt="Farm Road Leading to Homelet Veggies" style="width: 100%; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.15);" />
-  </div>
-</section>
 
-  
+  <section class="directions-section">
+    <div class="directions-text">
+      <p>
+        We are located just a few kilometers from Moiben Town. If you’re coming from Eldoret, take the Moi University Road heading east, then turn right at the Moiben junction.
+        Look for the signposts directing you to our farm, and you'll find us surrounded by lush greenery and fresh air. Parking is available on site.
+      </p>
+    </div>
+    <div class="directions-image">
+      <img src="moi.avif" alt="Farm Road Leading to Homelet Veggies" />
+    </div>
+  </section>
 
-
-
-
-
-
-
-
-<section class="contact-section">
+  <section class="contact-section">
     <h2>Get in Touch</h2>
     <div class="contact-details">
       <div class="contact-box">
@@ -249,48 +310,37 @@ footer {
     </div>
   </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
   <footer>
-    <p>&copy; 2025 FreshFarm </p>
+    <p>&copy; 2025 FreshFarm</p>
     <div class="social-icons">
-      <a href="https://wa.me/254724491544
-      " target="_blank" aria-label="whatsapp">
-        <img src="whatsapp.png" alt="Whatsapp" />
+      <a href="https://wa.me/254724491544" target="_blank" aria-label="WhatsApp">
+        <img src="whatsapp.png" alt="WhatsApp" />
       </a>
       <a href="https://www.instagram.com/jeptoo44?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram">
         <img src="insta.jpeg" alt="Instagram" />
       </a>
-      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank" aria-label="facebook">
-        <img src="facebook.jpeg" alt="facebook" />
+      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank" aria-label="Facebook">
+        <img src="facebook.jpeg" alt="Facebook" />
       </a>
     </div>
   </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('open');
+    });
+
+    // Optional: allow toggling menu with keyboard (Enter/Space)
+    menuToggle.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        menu.classList.toggle('open');
+      }
+    });
+  </script>
 
 </body>
 </html>
