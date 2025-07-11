@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Products | Homelet Veggies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f9f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #2d5d34;
+      color: white;
+      padding: 1em 2em 0.5em;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 120px;
+      margin-right: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .product-section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .product-section h2 {
+      color: #2d5d34;
+      margin-bottom: 40px;
+    }
+
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .product-card {
+      background: white;
+      width: 280px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-card h3 {
+      margin: 15px;
+      color: #24b129;
+    }
+
+    .product-card p {
+      margin: 0 15px 20px;
+      font-size: 0.95em;
+    }
+
+
+    
+.contact-section {
+  background-color: #e9f8ed;
+  padding: 60px 20px;
+  text-align: center;
+  color: #2d5d34;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-box {
+  max-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+  color: #24b129;
+  font-size: 1.2em;
+}
+
+.contact-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+    
+footer {
+  background-color: #363131;
+  text-align: center;
+  padding: 1.5em 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+    @media (max-width: 768px) {
+      .header-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <img src="logo.png" alt="Homelet Veggies" class="logo" />
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Our Products</a>
+      <a href="about.html">About</a>
+      <a href="location.html">Visit Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="product-section">
+    <h2>🌿 Our Fresh Vegetable Selection</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="product1.jpeg" alt="Spinach" />
+        <h3>Kienyeji</h3>
+        <p>Rich in iron and harvested fresh every morning.</p>
+      </div>
+      <div class="product-card">
+        <img src="product2.jpeg" alt="Carrots" />
+        <h3>Carrots</h3>
+        <p>Crunchy, sweet, and perfect for every meal.</p>
+      </div>
+      <div class="product-card">
+        <img src="product3.jpeg" alt="Tomatoes" />
+        <h3>Tomatoes</h3>
+        <p>Juicy, sun-ripened tomatoes packed with flavor.</p>
+      </div>
+      <div class="product-card">
+        <img src="product4.jpeg" alt="Okra" />
+        <h3>Okra (Lady Finger)</h3>
+        <p>Fresh, tender pods ideal for frying or stewing.</p>
+      </div>
+      <div class="product-card">
+        <img src="product6.jpeg" alt="Bell Peppers" />
+        <h3>Bell Peppers</h3>
+        <p>Colorful and crunchy – great for grilling or salads.</p>
+      </div>
+      <div class="product-card">
+        <img src="product5.jpeg" alt="Cabbage" />
+        <h3>Cabbage</h3>
+        <p>Green and crisp, grown without synthetic chemicals.</p>
+      </div>
+
+
+      
+
+
+
+    </div>
+  </section>
+
+
+  <section style="padding: 60px 20px; background-color: #e9f8ed; color: #2d5d34;">
+    <h2 style="text-align: center; margin-bottom: 40px;">🌱 How We Grow</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 40px; max-width: 1100px; margin: 0 auto;">
+      
+      <div style="flex: 1 1 350px; min-width: 300px;">
+        <p style="font-size: 1.2em; line-height: 1.8;">
+          At <strong>Homelet Veggies</strong>, we believe that healthy soil grows healthy food. We use sustainable methods like natural composting, drip irrigation, and crop rotation — without synthetic fertilizers or harmful pesticides. Everything is grown with care by our family and local farmers who value the environment as much as you do.
+        </p>
+      </div>
+      
+      <div style="flex: 1 1 600px; min-width: 300px; text-align: center;">
+        <img src="process.jpeg" alt="Our Farming Practices" style="width: 100%; max-width: 600px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);" />
+      </div>
+      
+    </div>
+  </section>
+  
+  
+
+
+  <section style="position: relative; background: url('farm.webp') no-repeat center center/cover; height: 400px; color: white; text-align: center; display: flex; align-items: center; justify-content: center;">
+     
+      <p style="font-size: 1.1em; line-height: 1.4; margin: 0;">
+        From early-morning harvests to eco-friendly techniques, every step of our farming process is rooted in care and sustainability.
+      </p>
+
+      <a href="about.html" style="display: inline-block; padding: 10px 25px; background-color: #2d5d34; color: white; text-decoration: none; border-radius: 5px; font-weight: bold;">
+        Learn More
+      </a>
+    </div>
+  </section>
+  
+  <section style="padding: 60px 20px; background-color: #f0fff4; text-align: center; color: #2d5d34;">
+    <h2>📦 Bulk Orders & Delivery</h2>
+    <p style="max-width: 800px; margin: 0 auto; font-size: 1.1em; line-height: 1.6;">
+      Running a restaurant, hotel, or food business? We offer custom packaging, bulk pricing, and reliable delivery to your doorstep. 
+      Our team ensures every box is packed with care and delivered fresh.
+    </p>
+    <div style="margin-top: 30px;">
+      <a href="contact.html" style="padding: 12px 25px; background-color: #2d5d34; color: #fff; text-decoration: none; border-radius: 5px; font-weight: bold;">Request a Quote</a>
+    </div>
+  </section>
+
+  
+  
+  
+  
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-details">
+      <div class="contact-box">
+        <h3>📍 Address</h3>
+        <p><strong>Head Office:</strong> Near Moiben Town<br>Moiben, Kenya</p>
+      </div>
+  
+      <div class="contact-box">
+        <h3>📞 Contact</h3>
+        <p><strong>Phone:</strong> +254-724 491 544<br>
+        <strong>Email:</strong> jeptookorir56@gmail.com</p>
+      </div>
+  
+      <div class="contact-box">
+        <h3>🕒 Visit</h3>
+        <p><strong>Head Office:</strong> Mon–Fri: 7am – 4pm<br>
+        <strong>Branches:</strong> Mon–Sun: 8am – 8pm</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p>&copy; 2025 FreshFarm </p>
+    <div class="social-icons">
+      <a href="https://wa.me/254724491544
+      " target="_blank" aria-label="whatsapp">
+        <img src="whatsapp.png" alt="Whatsapp" />
+      </a>
+      <a href="https://www.instagram.com/jeptoo44?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram">
+        <img src="insta.jpeg" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank" aria-label="facebook">
+        <img src="facebook.jpeg" alt="facebook" />
+      </a>
+    </div>
+  </footer>
+  
+
+
+</body>
+</html>

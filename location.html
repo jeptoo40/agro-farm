@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Location - Homelet Veggies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f9f4;
+      color: #2d5d34;
+    }
+
+    header {
+      background-color: #2d5d34;
+      padding: 1em 2em;
+      color: white;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .logo {
+      height: 120px;
+      margin-right: 20px;
+    }
+
+    nav {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1em;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section.location-info {
+      background: url('https://maps.maphill.com/Kenya/Rift-Valley/Uasin-Gishu/Moiben/maps/satellite-map-800x600.jpg') no-repeat center center/cover;
+      padding: 60px 20px;
+      color: white;
+      text-shadow: 0 0 8px rgba(0,0,0,0.7);
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 15px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    section.location-info h2 {
+      font-size: 2.5em;
+      margin-bottom: 0.5em;
+    }
+
+    section.location-info p {
+      font-size: 1.2em;
+      max-width: 600px;
+      margin: 0 auto 1.5em;
+    }
+
+    .map-container {
+      max-width: 900px;
+      margin: 40px auto;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: 0;
+    }
+
+
+      
+.contact-section {
+  background-color: #e9f8ed;
+  padding: 60px 20px;
+  text-align: center;
+  color: #2d5d34;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-box {
+  max-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+  color: #24b129;
+  font-size: 1.2em;
+}
+
+.contact-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+footer {
+  background-color: #363131;
+  text-align: center;
+  padding: 1.5em 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+    @media (max-width: 600px) {
+      section.location-info h2 {
+        font-size: 1.8em;
+      }
+
+      section.location-info p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+        <img src="logo.png" alt="Homelet Veggies" class="logo" />
+      </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Our Products</a>
+      <a href="about.html">About</a>
+      <a href="location.html">Visit Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+ 
+
+  <div class="map-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3991.879452727089!2d35.12516337416061!3d0.9269560992552269!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x17800c9f0b53f683%3A0x73ec84f01ef28738!2sMoiben%2C%20Kenya!5e0!3m2!1sen!2sus!4v1689485752568!5m2!1sen!2sus"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+  <section style="
+  max-width: 1500px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #d8f0d3;
+  border-radius: 15px;
+  color: #2d5d34;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+">
+  <div style="
+    flex: 1 1 500px;
+    min-width: 320px;
+    font-size: 1.2em;
+  ">
+ 
+    <p style="line-height: 1.7;">
+      We are located just a few kilometers from Moiben Town. If you’re coming from Eldoret, take the Moi University Road heading east, then turn right at the Moiben junction. Look for the signposts directing you to our farm, and you'll find us surrounded by lush greenery and fresh air. Parking is available on site.
+    </p>
+  </div>
+  <div style="
+    flex: 1 1 550px;
+    min-width: 320px;
+  ">
+    <img src="moi.avif" alt="Farm Road Leading to Homelet Veggies" style="width: 100%; border-radius: 15px; box-shadow: 0 6px 15px rgba(0,0,0,0.15);" />
+  </div>
+</section>
+
+  
+
+
+
+
+
+
+
+
+<section class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-details">
+      <div class="contact-box">
+        <h3>📍 Address</h3>
+        <p><strong>Head Office:</strong> Near Moiben Town<br>Moiben, Kenya</p>
+      </div>
+  
+      <div class="contact-box">
+        <h3>📞 Contact</h3>
+        <p><strong>Phone:</strong> +254-724 491 544<br>
+        <strong>Email:</strong> jeptookorir56@gmail.com</p>
+      </div>
+  
+      <div class="contact-box">
+        <h3>🕒 Visit</h3>
+        <p><strong>Head Office:</strong> Mon–Fri: 7am – 4pm<br>
+        <strong>Branches:</strong> Mon–Sun: 8am – 8pm</p>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <footer>
+    <p>&copy; 2025 FreshFarm </p>
+    <div class="social-icons">
+      <a href="https://wa.me/254724491544
+      " target="_blank" aria-label="whatsapp">
+        <img src="whatsapp.png" alt="Whatsapp" />
+      </a>
+      <a href="https://www.instagram.com/jeptoo44?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram">
+        <img src="insta.jpeg" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank" aria-label="facebook">
+        <img src="facebook.jpeg" alt="facebook" />
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>

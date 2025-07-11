@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Homelet Veggies</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #2d5d34;
+      color: white;
+      padding: 1em 2em 0.5em;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      height: 120px;
+      width: auto;
+      margin-right: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 1.8em;
+    }
+
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('download.jpeg') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #fff;
+      color: #4CAF50;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+
+
+
+    .features {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+  color: #333;
+}
+
+.features h2 {
+  margin-bottom: 40px;
+  font-size: 2em;
+}
+
+.feature-items {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 300px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.feature-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #24b129; /* matching your green header */
+}
+
+
+
+
+
+.seasonal-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.seasonal-content ul {
+  max-width: 300px;
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1em;
+}
+
+.seasonal-img {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.seasonal-specials {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 100px 40px;
+  text-align: center;
+  color: #007b33; /* matching seasonal style */
+}
+
+
+
+
+.image-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+.contact-section {
+  background-color: #e9f8ed;
+  padding: 60px 20px;
+  text-align: center;
+  color: #2d5d34;
+}
+
+.contact-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-box {
+  max-width: 250px;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.contact-box h3 {
+  margin-bottom: 10px;
+  color: #24b129;
+  font-size: 1.2em;
+}
+
+.contact-box p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+  background-color: #363131;
+  text-align: center;
+  padding: 1.5em 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+    @media (max-width: 768px) {
+      .header-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-top">
+      <img src="logo.png" alt="Green Power" class="logo" />
+      
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Our Products</a>
+      <a href="about.html">About</a>
+      <a href="location.html">Visit Us</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Farm Fresh Vegetables Delivered to Your Door</h2>
+    <p>Grown with love and care on our family farm.</p>
+    <a href="Visitus.html" class="btn">GET THE LOCATION</a>
+  </section>
+
+
+  <section class="features">
+    <h2>Why Choose FreshFarm Veggies?</h2>
+    <div class="feature-items">
+      <div class="feature">
+        <img src="home1.jpg" alt="Organic & Fresh" class="feature-img" />
+        <h3>Organic & Fresh</h3>
+        <p>All our veggies are grown without harmful chemicals and harvested fresh.</p>
+      </div>
+      <div class="feature">
+        <img src="home2.jpg" alt="Locally Grown" class="feature-img" />
+        <h3>Locally Grown</h3>
+        <p>Supporting local farmers and ensuring the shortest farm-to-table journey.</p>
+      </div>
+      <div class="feature">
+        <img src="home3.jpg" alt="Fast Delivery" class="feature-img" />
+        <h3>Fast Delivery</h3>
+        <p>Get your veggies delivered to your door quickly and safely.</p>
+      </div>
+    </div>
+  </section>
+  
+  
+
+  <section class="seasonal-specials">
+    <h2>Seasonal Specials</h2>
+    <div class="seasonal-content">
+      <ul>
+        <li>Fresh Asparagus - April to June</li>
+        <li>Heirloom Tomatoes - July to September</li>
+        <li>Sweet Pumpkins - October to November</li>
+      </ul>
+      <img src="seasonal.jpeg" alt="Seasonal Vegetables" class="seasonal-img" />
+    </div>
+  </section>
+  
+  
+
+
+  <section class="image-banner">
+    <img src="home7.webp" alt="Our Farm" />
+  </section>
+  
+  <section class="contact-section">
+    <h2>Get in Touch</h2>
+    <div class="contact-details">
+      <div class="contact-box">
+        <h3>📍 Address</h3>
+        <p><strong>Head Office:</strong> Near Moiben Town<br>Moiben, Kenya</p>
+      </div>
+  
+      <div class="contact-box">
+        <h3>📞 Contact</h3>
+        <p><strong>Phone:</strong> +254-724 491 544<br>
+        <strong>Email:</strong> jeptookorir56@gmail.com</p>
+      </div>
+  
+      <div class="contact-box">
+        <h3>🕒 Visit</h3>
+        <p><strong>Head Office:</strong> Mon–Fri: 7am – 4pm<br>
+        <strong>Branches:</strong> Mon–Sun: 8am – 8pm</p>
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p>&copy; 2025 FreshFarm </p>
+    <div class="social-icons">
+      <a href="https://wa.me/254724491544
+      " target="_blank" aria-label="whatsapp">
+        <img src="whatsapp.png" alt="Whatsapp" />
+      </a>
+      <a href="https://www.instagram.com/jeptoo44?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram">
+        <img src="insta.jpeg" alt="Instagram" />
+      </a>
+      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank" aria-label="facebook">
+        <img src="facebook.jpeg" alt="facebook" />
+      </a>
+    </div>
+  </footer>
+  
+
+</body>
+</html>
