@@ -35,21 +35,72 @@
       font-size: 1.8em;
     }
 
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
+  nav {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+/* The nav links */
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+/* Hamburger button - hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+/* Hover effect on links */
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  /* Hide nav links */
+  nav a {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* When nav open, show links stacked vertically */
+  nav.open a {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Also keep your existing .header-top responsive styles */
+.header-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .header-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
 
     .product-section {
       padding: 60px 20px;
@@ -180,17 +231,19 @@ footer {
 <body>
 
   <header>
-    <div class="header-top">
-      <img src="logo.png" alt="Homelet Veggies" class="logo" />
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="product.html">Our Products</a>
-      <a href="about.html">About</a>
-      <a href="location.html">Visit Us</a>
-      <a href="contact.html">Contact Us</a>
-    </nav>
-  </header>
+  <div class="header-top">
+    <img src="logo.png" alt="Homelet Veggies" class="logo" />
+  </div>
+  <nav id="nav">
+    <span class="menu-toggle" id="menu-toggle">&#9776;</span>
+    <a href="index.html">Home</a>
+    <a href="product.html">Our Products</a>
+    <a href="about.html">About</a>
+    <a href="location.html">Visit Us</a>
+    <a href="contact.html">Contact Us</a>
+  </nav>
+</header>
+
 
   <section class="product-section">
     <h2>🌿 Our Fresh Vegetable Selection</h2>
@@ -342,6 +395,14 @@ footer {
     </div>
   </footer>
   
+<script>
+  const toggleBtn = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+
+  toggleBtn.addEventListener('click', () => {
+    nav.classList.toggle('open');
+  });
+</script>
 
 
 </body>
