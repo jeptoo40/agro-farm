@@ -12,7 +12,6 @@
       color: #2d5d34;
     }
 
-   
     header {
       background-color: #2d5d34;
       color: white;
@@ -26,70 +25,74 @@
     }
 
     .logo {
-      height: 120px;
+      height: 100px;
       margin-right: 20px;
     }
+
     .nav {
-  text-align: center;
-  position: relative;
-}
+      text-align: center;
+      position: relative;
+    }
 
-.nav-toggle {
-  display: none;
-  font-size: 1.8em;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  margin-top: 10px;
-}
+    .nav-toggle {
+      display: none;
+      font-size: 1.8em;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
 
-.nav-links {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 10px 0 0;
-}
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
 
-.nav-links li {
-  margin: 5px 15px;
-}
+    .nav-links li {
+      margin: 5px 15px;
+    }
 
-.nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-.nav-links a:hover {
-  text-decoration: underline;
-}
+    .nav-links a:hover {
+      text-decoration: underline;
+    }
 
-/* Mobile styles */
-@media (max-width: 768px) {
-  .nav-toggle {
-    display: block;
-  }
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: block;
+      }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #2d5d34;
-    margin-top: 10px;
-    border-radius: 8px;
-    padding: 15px;
-  }
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #2d5d34;
+        margin-top: 10px;
+        border-radius: 8px;
+        padding: 10px 0;
+      }
 
-  .nav-links.active {
-    display: flex;
-  }
+      .nav-links.active {
+        display: flex;
+      }
 
-  .nav-links li {
-    margin: 10px 0;
-  }
-}
+      .nav-links li {
+        margin: 10px 0;
+      }
+
+      .nav-links a {
+        font-size: 1em;
+      }
+    }
 
     .hero {
       background: url('about.jpeg') no-repeat center center/cover;
@@ -155,52 +158,100 @@
       color: #555;
     }
 
-        
-footer {
-  background-color: #363131;
-  text-align: center;
-  padding: 1.5em 20px;
-  font-size: 0.9em;
-  color: #555;
-}
+    .values-section {
+      background: url('bg.jpeg') no-repeat center center/cover;
+      color: #2d5d34;
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
 
-.social-icons {
-  margin-top: 10px;
-}
+    .values-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: white;
+      text-shadow: 0 0 5px rgba(0,0,0,0.7);
+    }
 
-.social-icons a {
-  margin: 0 10px;
-  display: inline-block;
-}
+    .value-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
 
-.social-icons img {
-  width: 24px;
-  height: 24px;
-  transition: transform 0.3s ease;
-}
+    .value-box {
+      flex: 1 1 280px;
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 12px;
+      padding: 20px 30px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
 
-.social-icons img:hover {
-  transform: scale(1.2);
-}
+    .value-box img {
+      width: 80px;
+      flex-shrink: 0;
+    }
+
+    .value-box h3 {
+      margin: 0;
+      font-size: 1.1em;
+    }
+
+    .value-box p {
+      font-size: 0.95em;
+      margin-top: 8px;
+    }
+
+    footer {
+      background-color: #363131;
+      text-align: center;
+      padding: 1.5em 20px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    .social-icons {
+      margin-top: 10px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    .social-icons img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
   </style>
 </head>
 <body>
 
   <header>
     <div class="header-top">
-        <img src="logo.png" alt="Homelet Veggies" class="logo" />
-      </div>
+      <img src="logo.png" alt="Homelet Veggies" class="logo" />
+    </div>
     <nav class="nav">
-  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-  <ul class="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="product.html">Our Products</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="location.html">Visit Us</a></li>
-    <li><a href="contact.html">Contact</a></li>
-  </ul>
-</nav>
-
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="product.html">Our Products</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="location.html">Visit Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <div class="hero">
@@ -210,9 +261,9 @@ footer {
   <section class="about-section">
     <h2>Our Story</h2>
     <p>
-      Homelet Veggies was born from a passion for sustainable farming and community wellness. 
-      Nestled near Moiben Town, we grow a wide variety of fresh vegetables using eco-friendly 
-      and organic practices. Our journey started as a small family farm and has grown into a 
+      Homelet Veggies was born from a passion for sustainable farming and community wellness.
+      Nestled near Moiben Town, we grow a wide variety of fresh vegetables using eco-friendly
+      and organic practices. Our journey started as a small family farm and has grown into a
       trusted provider for both households and businesses across Kenya.
     </p>
 
@@ -225,120 +276,66 @@ footer {
     <h2>Meet Our Team</h2>
     <div class="team">
       <div class="member">
-        <img src="p1.jpeg" alt="Founder" />
+        <img src="p1.jpeg" alt="Jeptoo Korir" />
         <h3>Jeptoo Korir</h3>
         <p>Founder & Farm Manager</p>
       </div>
       <div class="member">
-        <img src="p2.jpeg" alt="Team Member" />
+        <img src="p2.jpeg" alt="Kiptoo Langat" />
         <h3>Kiptoo Langat</h3>
         <p>Crop Specialist</p>
       </div>
       <div class="member">
-        <img src="p3.jpeg" alt="Team Member" />
+        <img src="p3.jpeg" alt="Rose Cherono" />
         <h3>Rose Cherono</h3>
         <p>Harvest & Packaging Lead</p>
       </div>
     </div>
   </section>
 
-
-
-
-
-  <section style="
-  background: url('bg.jpeg') no-repeat center center/cover;
-  color: #2d5d34;
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 40px auto;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  ">
-  <h2 style="text-align: center; margin-bottom: 40px; color: white; text-shadow: 0 0 5px rgba(0,0,0,0.7);">🌿 Our Values</h2>
-  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px;">
-
-    <div style="
-      flex: 1 1 280px;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      padding: 20px 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      ">
-      <img src="eco.jpg" alt="Eco-Friendly Farming" style="width: 80px; flex-shrink: 0;" />
-      <div>
-        <h3>Eco-Friendly Farming</h3>
-        <p>We prioritize sustainable methods to protect our soil, water, and wildlife for generations to come.</p>
+  <section class="values-section">
+    <h2>🌿 Our Values</h2>
+    <div class="value-items">
+      <div class="value-box">
+        <img src="eco.jpg" alt="Eco-Friendly" />
+        <div>
+          <h3>Eco-Friendly Farming</h3>
+          <p>We protect our soil, water, and wildlife for generations to come.</p>
+        </div>
+      </div>
+      <div class="value-box">
+        <img src="ec2.jpg" alt="Community" />
+        <div>
+          <h3>Community Support</h3>
+          <p>We empower local farmers and invest in our community.</p>
+        </div>
+      </div>
+      <div class="value-box">
+        <img src="ec4.jpg" alt="Freshness" />
+        <div>
+          <h3>Quality & Freshness</h3>
+          <p>Our veggies are harvested at peak freshness for best taste and nutrition.</p>
+        </div>
       </div>
     </div>
+  </section>
 
-    <div style="
-      flex: 1 1 280px;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      padding: 20px 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      ">
-      <img src="ec2.jpg" alt="Community Support" style="width: 80px; flex-shrink: 0;" />
-      <div>
-        <h3>Community Support</h3>
-        <p>Partnering with local farmers and giving back to the community is at the heart of everything we do.</p>
-      </div>
-    </div>
-
-    <div style="
-      flex: 1 1 280px;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 12px;
-      padding: 20px 30px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      ">
-      <img src="ec4.jpg" alt="Quality & Freshness" style="width: 80px; flex-shrink: 0;" />
-      <div>
-        <h3>Quality & Freshness</h3>
-        <p>Our veggies are harvested at peak freshness to ensure you get the best taste and nutrition.</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  
-  
-<footer>
-    <p>&copy; 2025 FreshFarm </p>
+  <footer>
+    <p>&copy; 2025 Homelet Veggies</p>
     <div class="social-icons">
-      <a href="https://wa.me/254724491544
-      " target="_blank" aria-label="whatsapp">
-        <img src="whatsapp.png" alt="Whatsapp" />
-      </a>
-      <a href="https://www.instagram.com/jeptoo44?igsh=YzljYTk1ODg3Zg==" target="_blank" aria-label="Instagram">
-        <img src="insta.jpeg" alt="Instagram" />
-      </a>
-      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank" aria-label="facebook">
-        <img src="facebook.jpeg" alt="facebook" />
-      </a>
+      <a href="https://wa.me/254724491544" target="_blank"><img src="whatsapp.png" alt="WhatsApp" /></a>
+      <a href="https://www.instagram.com/jeptoo44" target="_blank"><img src="insta.jpeg" alt="Instagram" /></a>
+      <a href="https://www.facebook.com/profile.php?id=100085414080566" target="_blank"><img src="facebook.jpeg" alt="Facebook" /></a>
     </div>
   </footer>
 
-
   <script>
-  const toggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelector('.nav-links');
-
-  toggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-  });
-</script>
+    const toggle = document.querySelector('.nav-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
 
 </body>
 </html>
