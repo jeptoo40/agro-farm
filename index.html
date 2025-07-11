@@ -39,16 +39,51 @@
       margin-top: 10px;
     }
 
-    nav a {
-      margin: 0 15px;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
+    nav {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+/* The nav links */
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+}
+
+/* Hamburger button - hidden on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+/* Small screen styles */
+@media (max-width: 768px) {
+  /* Hide normal links */
+  nav a {
+    display: none;
+  }
+  
+  /* Show hamburger */
+  .menu-toggle {
+    display: block;
+  }
+  
+  /* When nav is open, show links stacked vertically */
+  nav.open a {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
     .hero {
       background: url('download.jpeg') no-repeat center center/cover;
